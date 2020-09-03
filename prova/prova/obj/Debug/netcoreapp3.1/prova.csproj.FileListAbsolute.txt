@@ -125,3 +125,4 @@ D:\Documents\ProjetoCore\Prova_drl_it\prova\prova\obj\Debug\netcoreapp3.1\static
 D:\Documents\ProjetoCore\Prova_drl_it\prova\prova\obj\Debug\netcoreapp3.1\prova.dll
 D:\Documents\ProjetoCore\Prova_drl_it\prova\prova\obj\Debug\netcoreapp3.1\prova.pdb
 D:\Documents\ProjetoCore\Prova_drl_it\prova\prova\obj\Debug\netcoreapp3.1\prova.genruntimeconfig.cache
+D:\Documents\ProjetoCore\Prova_drl_it\prova\prova\bin\Debug\netcoreapp3.1\package-lock.json
