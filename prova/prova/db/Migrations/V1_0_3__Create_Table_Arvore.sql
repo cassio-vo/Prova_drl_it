@@ -1,0 +1,12 @@
+CREATE TABLE `arvore` (
+	`Id` int(10) UNSIGNED NOT NULL,
+	`Descricao` VARCHAR(50) NULL DEFAULT NULL,
+	`Idade` int(10) NULL DEFAULT NULL,
+	`IdEspecie` int(10) UNSIGNED NULL DEFAULT NULL,
+	`IdGrupoArvore` int(10) UNSIGNED NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`),
+	FOREIGN KEY (`IdEspecie`) REFERENCES Especie(`Id`),
+	FOREIGN KEY (`IdGrupoArvore`) REFERENCES GrupoArvore(`Id`)
+)
+ENGINE=InnoDB
+;
