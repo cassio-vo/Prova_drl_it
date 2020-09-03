@@ -16,8 +16,8 @@ export class CreateArvoreComponent implements OnInit {
       id: new FormControl(),
       descricao: new FormControl(),
       idade: new FormControl(),
-      especie: new FormControl(),
-      grupo: new FormControl(),
+      idEspecie: new FormControl(),
+      idGrupo: new FormControl(),
     });
   }
 

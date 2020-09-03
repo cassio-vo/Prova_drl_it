@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create-especie',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-especie.component.css']
 })
 export class CreateEspecieComponent implements OnInit {
+  especieForm: FormGroup; 
 
   constructor() { }
 
   ngOnInit(): void {
+    this.especieForm = new FormGroup({
+      id: new FormControl(),
+      descricao: new FormControl()
+    });
+  }
+
+  onSubmit(): void{
+    console.log(this.especieForm.value);
   }
 
 }
