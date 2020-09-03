@@ -16,7 +16,7 @@ namespace prova.Data.Converters
                 return new Colheita
                 {
                     Id = origin.Id,
-                    Arvore = origin.Arvore,
+                    IdArvore = origin.Arvore,
                     DataColheita = origin.DataColheita,
                     Informacoes = origin.Informacoes,
                     PesoBruto = origin.PesoBruto
@@ -31,7 +31,7 @@ namespace prova.Data.Converters
                 return new ColheitaVO
                 {
                     Id = origin.Id,
-                    Arvore = origin.Arvore,
+                    Arvore = origin.IdArvore,
                     DataColheita = origin.DataColheita,
                     Informacoes = origin.Informacoes,
                     PesoBruto = origin.PesoBruto

@@ -11,8 +11,8 @@ namespace prova.Data.VO
 
         public int Idade { get; set; }
 
-        public int CodigoEspecie { get; set; }
+        public int IdEspecie { get; set; }
 
-        public int CodigoGrupo { get; set; }
+        public int IdGrupoArvore { get; set; }
     }
 }

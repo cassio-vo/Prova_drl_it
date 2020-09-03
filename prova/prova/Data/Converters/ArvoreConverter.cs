@@ -16,8 +16,8 @@ namespace prova.Data.Converters
                 return new Arvore
                 {
                     Id = origin.Id,
-                    CodigoEspecie = origin.CodigoEspecie,
-                    CodigoGrupo = origin.CodigoGrupo,
+                    IdEspecie = origin.IdEspecie,
+                    IdGrupoArvore = origin.IdGrupoArvore,
                     Descricao = origin.Descricao,
                     Idade = origin.Idade
                 };
@@ -31,8 +31,8 @@ namespace prova.Data.Converters
                 return new ArvoreVO
                 {
                     Id = origin.Id,
-                    CodigoEspecie = origin.CodigoEspecie,
-                    CodigoGrupo = origin.CodigoGrupo,
+                    IdEspecie = origin.IdEspecie,
+                    IdGrupoArvore = origin.IdGrupoArvore,
                     Descricao = origin.Descricao,
                     Idade = origin.Idade
                 };

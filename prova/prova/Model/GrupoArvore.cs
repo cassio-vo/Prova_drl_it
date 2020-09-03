@@ -11,5 +11,7 @@ namespace prova.Model
         public string Nome { get; set; }
 
         public string Descricao { get; set; }
+
+        public ICollection<Arvore> Arvores { get; set; }
     }
 }

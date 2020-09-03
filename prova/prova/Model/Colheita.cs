@@ -14,6 +14,7 @@ namespace prova.Model
 
         public decimal PesoBruto { get; set; }
 
-        public int Arvore { get; set; }
+        public int IdArvore { get; set; }
+        public Arvore Arvore { get; set; }
     }
 }
