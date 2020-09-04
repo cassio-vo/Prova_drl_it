@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-especie',
@@ -14,7 +14,7 @@ export class CreateEspecieComponent implements OnInit {
   ngOnInit(): void {
     this.especieForm = new FormGroup({
       id: new FormControl(),
-      descricao: new FormControl()
+      descricao: new FormControl(Validators.required)
     });
   }
 

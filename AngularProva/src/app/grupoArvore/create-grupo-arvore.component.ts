@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-grupo-arvore',
@@ -14,8 +14,8 @@ export class CreateGrupoArvoreComponent implements OnInit {
   ngOnInit(): void {
     this.grupoArvoreForm = new FormGroup({
       id: new FormControl(),
-      nome: new FormControl(),
-      descricao: new FormControl()
+      nome: new FormControl(Validators.required),
+      descricao: new FormControl(Validators.required)
     });
   }
 

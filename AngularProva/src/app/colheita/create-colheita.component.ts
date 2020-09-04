@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-create-colheita',
@@ -14,10 +14,10 @@ export class CreateColheitaComponent implements OnInit {
   ngOnInit(): void {
     this.colheitaForm = new FormGroup({
       id: new FormControl(),
-      informacoes: new FormControl(),
-      dataColheita: new FormControl(),
-      pesoBruto: new FormControl(),
-      idArvore: new FormControl(),
+      informacoes: new FormControl(Validators.required),
+      dataColheita: new FormControl(Validators.required),
+      pesoBruto: new FormControl([Validators.required, Validators.pattern("^[0-9]\d*(\.\d+)?$")]),
+      idArvore: new FormControl(Validators.required),
     });
   }
 
