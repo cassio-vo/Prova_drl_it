@@ -1,1 +1,23 @@
-<p>list-arvores works!</p>
+<div class="col-md-offset-3 col-md-6">
+    <table class="table table-bordered">
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Idade</th>
+            <th>Especie</th>
+            <th>Grupo</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+            </tr>
+        <tr *ngFor="let el of $httpdata">
+            <td>{{el.id}}</td>
+            <td>{{el.descricao}}</td>
+            <td>{{el.Idade}}</td>
+            <td>{{el.IdEspecie}}</td>
+            <td>{{el.IdGrupoArvore}}</td>
+            <td>Editar</td>
+            <td>Excluir</td>
+        </tr>
+    </table>
+</div>
+
