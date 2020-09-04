@@ -14,7 +14,7 @@ export class CreateEspecieComponent implements OnInit {
   ngOnInit(): void {
     this.especieForm = new FormGroup({
       id: new FormControl(),
-      descricao: new FormControl(Validators.required)
+      descricao: new FormControl('',Validators.required)
     });
   }
 

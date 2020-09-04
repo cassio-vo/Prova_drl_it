@@ -14,10 +14,10 @@ export class CreateColheitaComponent implements OnInit {
   ngOnInit(): void {
     this.colheitaForm = new FormGroup({
       id: new FormControl(),
-      informacoes: new FormControl(Validators.required),
-      dataColheita: new FormControl(Validators.required),
-      pesoBruto: new FormControl([Validators.required, Validators.pattern("^[0-9]\d*(\.\d+)?$")]),
-      idArvore: new FormControl(Validators.required),
+      informacoes: new FormControl('',Validators.required),
+      dataColheita: new FormControl('',Validators.required),
+      pesoBruto: new FormControl(0,[Validators.required, Validators.pattern("^[0-9]\d*(\.\d+)?$")]),
+      idArvore: new FormControl(1,Validators.required),
     });
   }
 

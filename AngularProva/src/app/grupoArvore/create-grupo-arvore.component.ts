@@ -14,8 +14,8 @@ export class CreateGrupoArvoreComponent implements OnInit {
   ngOnInit(): void {
     this.grupoArvoreForm = new FormGroup({
       id: new FormControl(),
-      nome: new FormControl(Validators.required),
-      descricao: new FormControl(Validators.required)
+      nome: new FormControl('',Validators.required),
+      descricao: new FormControl('',Validators.required)
     });
   }
 

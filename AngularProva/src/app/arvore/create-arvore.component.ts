@@ -14,10 +14,10 @@ export class CreateArvoreComponent implements OnInit {
   ngOnInit(): void {
     this.arvoreForm = new FormGroup({
       id: new FormControl(),
-      descricao: new FormControl(Validators.required),
-      idade: new FormControl([Validators.required,Validators.pattern("^[0-9]{1,5}$")]),
-      idEspecie: new FormControl(Validators.required),
-      idGrupo: new FormControl(Validators.required),
+      descricao: new FormControl('',[Validators.required]),
+      idade: new FormControl('',[Validators.required,Validators.pattern("^[0-9]{1,5}$")]),
+      idEspecie: new FormControl(1,[Validators.required]),
+      idGrupo: new FormControl(1,[Validators.required]),
     });
   }
 

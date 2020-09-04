@@ -6,20 +6,42 @@
                 <h3>Cadastro de Árvores</h3>
             </div>
             <div class="panel-body">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label" for="descricao">Descrição</label>
+                <div class="form-group" [ngClass]="{'has-error': ((arvoreForm.get('descricao').touched ||
+                arvoreForm.get('descricao').dirty) &&
+                arvoreForm.get('descricao').errors)}">
+                    <label class="col-sm-2 control-label" for="">Descrição</label>
                     <div class="col-sm-8">
                         <input id="descricao" formControlName="descricao" type="text" class="form-control">
                     </div>
+                    <span class="help-block"
+                        *ngIf="((arvoreForm.get('descricao').touched ||
+                        arvoreForm.get('descricao').dirty) &&
+                        arvoreForm.get('descricao').errors)">
+                        <span *ngIf="arvoreForm.get('descricao').errors.required">
+                            DEscrição é obrigatória.
+                        </span>
+                    </span>
                 </div>
-                <div class="form-group">
+                <div class="form-group" [ngClass]="{'has-error': ((arvoreForm.get('idade').touched ||
+                arvoreForm.get('idade').dirty) &&
+                arvoreForm.get('idade').errors)}">
                     <label class="col-sm-2 control-label" for="idade">Idade</label>
                     <div class="col-sm-8">
                         <input id="idade" formControlName="idade" type="number" class="form-control">
                     </div>
+                    <span class="help-block"
+                        *ngIf="((arvoreForm.get('idade').touched ||
+                                arvoreForm.get('idade').dirty) &&
+                                arvoreForm.get('idade').errors)">
+                        <span *ngIf="arvoreForm.get('idade').errors.required">
+                            Idade é obrigatória.
+                        </span>
+                    </span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" [ngClass]="{'has-error': ((arvoreForm.get('idEspecie').touched ||
+                arvoreForm.get('idEspecie').dirty) &&
+                arvoreForm.get('idEspecie').errors)}">
                     <label class="col-sm-2 control-label" for="especie">Espécie</label>
                     <div class="col-sm-8">
                         <select formControlName="idEspecie" name="especie" id="especie" class="form-control">
@@ -28,17 +50,35 @@
                             <option value="3">Mercedes</option>
                             <option value="4">Audi</option>
                         </select>
+                        <span class="help-block"
+                            *ngIf="((arvoreForm.get('especie').touched ||
+                                    arvoreForm.get('especie').dirty) &&
+                                    arvoreForm.get('especie').errors)">
+                            <span *ngIf="arvoreForm.get('especie').errors.required">
+                                Espécie é obrigatória.
+                            </span>
+                        </span>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="col-sm-2 control-label" for="colheita">Colheita</label>
+                <div class="form-group" [ngClass]="{'has-error': ((arvoreForm.get('idGrupo').touched ||
+                arvoreForm.get('idGrupo').dirty) &&
+                arvoreForm.get('idGrupo').errors)}">
+                    <label class="col-sm-2 control-label" for="grupo">Grupo</label>
                     <div class="col-sm-8">
-                        <select formControlName="grupo" name="idColheita" id="colheita" class="form-control">
+                        <select formControlName="idGrupo" name="grupo" id="grupo" class="form-control">
                             <option value="1">Volvo</option>
                             <option value="2">Saab</option>
                             <option value="3">Mercedes</option>
                             <option value="4">Audi</option>
                         </select>
+                        <span class="help-block"
+                            *ngIf="((arvoreForm.get('idGrupo').touched ||
+                                    arvoreForm.get('idGrupo').dirty) &&
+                                    arvoreForm.get('idGrupo').errors)">
+                            <span *ngIf="arvoreForm.get('idGrupo').errors.required">
+                                Grupo é obrigatório.
+                            </span>
+                        </span>
                     </div>
                 </div>
             </div>
