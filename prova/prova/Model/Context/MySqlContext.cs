@@ -16,12 +16,12 @@ namespace prova.Model.Context
         {
         }
 
-        public DbSet<Arvore> Arvores { get; set; }
+        public DbSet<Arvore> Arvore { get; set; }
 
-        public DbSet<Colheita> Colheitas { get; set; }
+        public DbSet<Colheita> Colheita { get; set; }
 
-        public DbSet<Especie> Especies { get; set; }
+        public DbSet<Especie> Especie { get; set; }
 
-        public DbSet<GrupoArvore> GruposArvore { get; set; }
+        public DbSet<GrupoArvore> GrupoArvore { get; set; }
     }
 }

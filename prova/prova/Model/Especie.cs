@@ -1,5 +1,6 @@
 ﻿using prova.Model.Base;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace prova.Model
 {
@@ -7,6 +8,7 @@ namespace prova.Model
     {
         public string Descricao { get; set; }
 
+        [NotMapped]
         public ICollection<Arvore> Arvores { get; set; }
     }
 }
